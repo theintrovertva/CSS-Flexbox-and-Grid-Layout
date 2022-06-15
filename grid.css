@@ -9,8 +9,44 @@ body{
     min-height: 100vh;
     justify-content: center;
     align-content: center;
-    display: flex;
     place-items: center;
+}
+
+.hero{
+	height: 10vh;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #018abe;
+}
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    padding-top: 10px;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px  10px;
+}
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+nav ul li a:hover{
+	color: #001b48;
+	transition: .4s;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    padding-top: 40px;
 }
 .container{
     display: grid;
@@ -46,27 +82,22 @@ body{
     color: #000;
   }
 .item-a{
-    grid-column: span 2;
     background-color: #001b48;
     grid-area: a;
 }
 .item-b{
-    grid-column: span 1;
     background-color: #02457a;
     grid-area: b;
 }
 .item-c{
-    grid-column: span 1;
     background-color: #018abe;
     grid-area: c;
 }
 .item-d{
-    grid-column: span 2;
     background-color: #97cadb;
     grid-area: d;
 }
 .item-e{
-    grid-column: span 2;
     background-color: #97cadb;
     grid-area: e;
 }

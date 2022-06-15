@@ -9,10 +9,46 @@ body{
     min-height: 100vh;
     justify-content: center;
     align-content: center;
-    display: flex;
     background-color: hsl(0, 0%, 95%);
 }
 
+.hero{
+	height: 10vh;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: hsl(179, 100%, 13%);
+}
+
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    padding-top: 10px;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px  25px;
+}
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+nav ul li a:hover{
+	color: #fc8500;
+	transition: .4s;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    padding-top: 40px;
+}
 .container{
     width: 100%;
     max-width: 1440px;
